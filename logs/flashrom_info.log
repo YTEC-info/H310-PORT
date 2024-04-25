@@ -1,0 +1,54 @@
+flashrom unknown on Linux 6.1.0-20-amd64 (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).
+flashrom was built with GCC 12.2.0, little endian
+Command line (3 args): flashrom -V -p internal
+Initializing internal programmer
+/sys/class/mtd/mtd0 does not exist
+No coreboot table found.
+Using Internal DMI decoder.
+No DMI table found.
+Found ITE Super I/O, ID 0x8613 on port 0x2e
+Found chipset "Intel H310C" with PCI ID 8086:a2ca.
+Enabling flash write... BIOS_SPI_BC = 0xa88: BIOS Interface Lock-Down: enabled, Boot BIOS Straps: 0x0 (SPI)
+Top Swap: not enabled
+SPI Read Configuration: prefetching enabled, caching enabled, 
+BIOS_CNTL = 0x89: BIOS Lock Enable: disabled, BIOS Write Enable: enabled
+SPIBAR = 0x00007f95cc7ab000 (phys = 0xfe010000)
+0x04: 0xe800 (HSFS)
+HSFS: FDONE=0, FCERR=0, AEL=0, SCIP=0, PRR34_LOCKDN=0, WRSDIS=1, FDOPSS=1, FDV=1, FLOCKDN=1
+SPI Configuration is locked down.
+Reading OPCODES... done
+0x06: 0x0010 (HSFC)
+HSFC: FGO=0, FCYCLE=8, WET=0, FDBC=0, SME=0
+0x0c: 0x00000000 (DLOCK)
+DLOCK: BMWAG_LOCKDN=0, BMRAG_LOCKDN=0, SBMWAG_LOCKDN=0, SBMRAG_LOCKDN=0,
+       PR0_LOCKDN=0, PR1_LOCKDN=0, PR2_LOCKDN=0, PR3_LOCKDN=0, PR4_LOCKDN=0,
+       SSEQ_LOCKDN=0
+0x50: 0x0000ffff (FRAP)
+BMWAG 0x00, BMRAG 0x00, BRWA 0xff, BRRA 0xff
+0x54: 0x00000000 FREG0: Flash Descriptor region (0x00000000-0x00000fff) is read-write.
+0x58: 0x07ff01c0 FREG1: BIOS region (0x001c0000-0x007fffff) is read-write.
+0x5C: 0x01bf0001 FREG2: Management Engine region (0x00001000-0x001bffff) is read-write.
+0xa0: 0x80 (SSFS)
+SSFS: SCIP=0, FDONE=0, FCERR=0, AEL=0
+0xa1: 0xfe0000 (SSFC)
+SSFC: SCGO=0, ACS=0, SPOP=0, COP=0, DBC=0, SME=0, SCF=6
+0xa4: 0x0000     (PREOP)
+0xa6: 0x0000     (OPTYPE)
+0xa8: 0x00000000 (OPMENU)
+0xac: 0x00000000 (OPMENU+4)
+0xc4: 0xf3d82085 (LVSCC)
+LVSCC: BES=0x1, WG=1, WSR=0, WEWS=0, EO=0x20, VCL=1
+0xc8: 0x20252025 (UVSCC)
+UVSCC: BES=0x1, WG=1, WSR=0, WEWS=0, EO=0x20
+Enabling hardware sequencing because some important opcode is locked.
+OK.
+The following protocols are supported: Programmer-specific.
+Probing for Programmer Opaque flash chip, 0 kB: Hardware sequencing reports 1 attached SPI flash chip with a density of 8192 kB.
+Added layout entry 00000000 - 007fffff named complete flash
+Found Programmer flash chip "Opaque flash chip" (8192 kB, Programmer-specific) on internal.
+Found Programmer flash chip "Opaque flash chip" (8192 kB, Programmer-specific).
+No operations were specified.
+Restoring PCI config space for 00:1f:5 reg 0xdc
