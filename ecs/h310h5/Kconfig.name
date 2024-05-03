@@ -1,2 +1,0 @@
-config BOARD_ECS_H310H5
-	bool "H310H5-M2"
